@@ -11,33 +11,28 @@ a {
   color: #8c765b; /* Brun clair pour les liens */
 }
 
-img {
-  display: block;
-  width: 15px;
-}
-
 body {
   margin: 0;
   padding: 0;
   background-color: #3e2723; /* Brun foncé pour le fond */
-  color: #F5F5F5; /* Brun clair pour le texte */
+  color: #f5f5f5; /* Brun clair pour le texte */
   font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
+
 
 .container {
   width: min(90%, 960px);
   margin-inline: auto;
   padding: 2rem 0;
-  text-align: left;
+  text-align:justify;
 }
 
 .main-header {
-  color: #F5F5F5; /* Brun moyen pour l'en-tête principal */
+  color: #f5f5f5; /* Brun moyen pour l'en-tête principal */
   font-size: clamp(2rem, 5vw, 5rem);
   text-align: left;
 }
-
 .sub-header {
   font-size: clamp(1rem, 2vw, 3rem);
 }
@@ -45,48 +40,27 @@ body {
 .error-message {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   margin-bottom: 4rem;
-  color: #F5F5F5; /* Brun moyen pour les messages d'erreur */
-}
-
-
-/* ligne vertical */
-.sidebar-section {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-}
-
-#date-wrapper {
-  margin-bottom: 1rem;
-}
-
-.week-day {
-  font-size: clamp(1.2rem, 3.5vw, 3.5rem);
-}
-
-#weather-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  color: #f5f5f5; /* Brun moyen pour les messages d'erreur */
 }
 
 .story {
   margin-bottom: 2rem;
   font-weight: 300;
+  break-inside: avoid;
 }
+
+
 .story .story-title {
-  color: #F5F5F5; /* Brun moyen pour les titres d'histoire */
+  color: #f5f5f5; /* Brun moyen pour les titres d'histoire */
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
   font-weight: 600;
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
-}
+
+
 
 #load-more-btn {
-  background-color: #F5F5F5; /* Brun moyen pour le bouton */
+  background-color: #f5f5f5; /* Brun moyen pour le bouton */
   color: #3e2723; /* Brun foncé pour le texte du bouton */
   font-weight: 700;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
@@ -113,22 +87,8 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+    
   .main-flex {
-    display: flex;
-    gap: 3rem;
-  }
-  .sidebar-section {
-    flex-basis: 90%;
-    border-right: 7px solid #F5F5F5; /* Brun moyen pour la bordure de la barre latérale */
-  }
-  #weather-wrapper {
-    grid-template-columns: repeat(1, auto);
-    row-gap: 0.5rem;
-  }
-  #date-wrapper {
-    margin-bottom: 5rem;
-  }
-  img {
-    width: 20px;
+        gap: 3rem;
   }
 }

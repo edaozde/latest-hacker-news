@@ -2,6 +2,8 @@ import { displayTenStories, displayError } from "./main.js";
 
 //MODEL
 
+
+//récupération des ids des NOUVELLES histoires
 async function fetchStoriesIds() {
   try {
     const response = await fetch(
@@ -19,6 +21,8 @@ async function fetchStoriesIds() {
   }
 }
 
+
+//récupération d'un id spécifique d'une histoire
 async function fetchStory(id) {
   try {
     const response = await fetch(
@@ -37,21 +41,30 @@ async function fetchStory(id) {
   }
 }
 
+
+//je veux récupérer 10 histoires 
 export async function fetchTenStories(index) {
-  try {
-    const ids = await fetchStoriesIds();
-
-    const chunkedIds = _.chunk(ids, 10);
-
-    let tenStories = await Promise.all(
-      chunkedIds[index].map((id) => fetchStory(id))
-    );
-
-    displayTenStories(tenStories);
-
-    return tenStories;
-  } catch (error) {
-    displayError();
-    console.error(error);
+    try {
+      const ids = await fetchStoriesIds();
+  
+      // Calcul du début et de la fin de la plage d'indices
+      const start = index * 10;
+      const end = start + 10;
+  
+      // Extraction des 10 identifiants à partir du tableau
+      const slicedIds = ids.slice(start, end);
+  
+      // Récupération des histoires pour les 10 identifiants, on attend qu'elles soient toutes récupérées pour les afficher
+      const tenStories = await Promise.all(slicedIds.map((id) => fetchStory(id)));
+  
+      // Affichage des histoires
+      displayTenStories(tenStories);
+  
+      return tenStories;
+    } catch (error) {
+      // Affichage de l'erreur
+      displayError();
+      console.error(error);
+    }
   }
-}
+  

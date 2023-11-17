@@ -17,58 +17,43 @@
 </head>
 
 <body>
+
+    <!-- début header -->
+
     <header>
-        <div class="container header-flex">
+        <div class="container header">
             <h1 class="main-header">Hacker News</h1>
             <p class="sub-header">breaking tech in real time</p>
         </div>
     </header>
+
+    <!-- fin header -->
+
+
     <main>
         <div class="container main-flex">
-            <section class="sidebar-section">
-                <div class="container sidebar-flex">
-                    <div id="date-wrapper">
-                        <!-- <p>
-                <span>Today is</span>
-                <span class="week-day">${day}</span>
-              </p>
-              <p class="full-date">${date}</p> -->
-                    </div>
-                    <div id="weather-wrapper">
-                        <!-- <div class="weather">
-                <span class="city">${cityName}:</span>
-                <span class="temp">${Math.ceil(
-                  city.current_weather.temperature
-                )}</span>
-                <span class="celsius">C&deg;</span>
-              </div>`;-->
+        </div>
+        </section>
+        <section class="news-section">
+
+            <div class="container news-flex">
+                <div id="news-wrapper">
+                </div>
+                <div class="actions">
+                    <button id="load-more-btn">Load More</button>
+                    <div class="stories-display-count">
+                        <span id="displayed-stories"></span>
+                        <span>of</span>
+                        <span id="total-stories"></span>
                     </div>
                 </div>
-            </section>
-            <section class="news-section">
-                <div class="container news-flex">
-                    <div id="news-wrapper">
-                        <!-- <div class="story">
-                <a class="story-title" href="${story.url}">${story.title}</a>
-                <p class="story-date">${date}</p>
-                <p class="story-author">Author: ${story.by}</p>
-            </div>`-->
-                    </div>
-                    <div class="actions">
-                        <button id="load-more-btn">Load More</button>
-                        <div class="stories-display-count">
-                            <span id="displayed-stories"></span>
-                            <span>of</span>
-                            <span id="total-stories"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
         </div>
     </main>
     <footer>
         <div class="container footer-flex">
-            <p class="footer-author">Eda Ozdemir</p>
+            <p class="footer-author">Eda O.</p>
             <div class="social-links">
                 <a class="social-link" href="https://github.com/edaozde" rel="noopener" target="_blank">
                     <img src="public/github-icon.svg" alt="GitHub logo icon" />
