@@ -20,19 +20,22 @@ body {
   margin: 0;
   padding: 0;
   background-color: #3e2723; /* Brun foncé pour le fond */
-  color: #8c765b; /* Brun clair pour le texte */
+  color: #F5F5F5; /* Brun clair pour le texte */
   font-family: "Montserrat", sans-serif;
+  font-style: italic;
 }
 
 .container {
   width: min(90%, 960px);
   margin-inline: auto;
   padding: 2rem 0;
+  text-align: left;
 }
 
 .main-header {
-  color: #bcaaa4; /* Brun moyen pour l'en-tête principal */
+  color: #F5F5F5; /* Brun moyen pour l'en-tête principal */
   font-size: clamp(2rem, 5vw, 5rem);
+  text-align: left;
 }
 
 .sub-header {
@@ -42,7 +45,7 @@ body {
 .error-message {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   margin-bottom: 4rem;
-  color: #a1887f; /* Brun moyen pour les messages d'erreur */
+  color: #F5F5F5; /* Brun moyen pour les messages d'erreur */
 }
 
 
@@ -69,7 +72,7 @@ body {
   font-weight: 300;
 }
 .story .story-title {
-  color: #a1887f; /* Brun moyen pour les titres d'histoire */
+  color: #F5F5F5; /* Brun moyen pour les titres d'histoire */
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
   font-weight: 600;
 }
@@ -83,7 +86,7 @@ body {
 }
 
 #load-more-btn {
-  background-color: #bcaaa4; /* Brun moyen pour le bouton */
+  background-color: #F5F5F5; /* Brun moyen pour le bouton */
   color: #3e2723; /* Brun foncé pour le texte du bouton */
   font-weight: 700;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
@@ -116,7 +119,7 @@ body {
   }
   .sidebar-section {
     flex-basis: 90%;
-    border-right: 7px solid #bcaaa4; /* Brun moyen pour la bordure de la barre latérale */
+    border-right: 7px solid #F5F5F5; /* Brun moyen pour la bordure de la barre latérale */
   }
   #weather-wrapper {
     grid-template-columns: repeat(1, auto);
