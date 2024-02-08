@@ -42,12 +42,14 @@ async function fetchStory(id) {
 }
 
 
-//je veux récupérer 10 histoires 
+//je veux récupérer 10 histoires , je fetch tous les id
 export async function fetchTenStories(index) {
     try {
+      //on recupère les 10 premieres nouvelles histoires
       const ids = await fetchStoriesIds();
   
       // Calcul du début et de la fin de la plage d'indices
+      //si index = 1, alors on commence à ajouter +10 histoires à partir de 10
       const start = index * 10;
       const end = start + 10;
   

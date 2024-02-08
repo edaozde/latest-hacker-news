@@ -8,31 +8,33 @@
 
 a {
   text-decoration: none;
-  color: #8c765b; /* Brun clair pour les liens */
+  color: #b8b6b6;
+}
+
+img {
+  display: block;
+  width: 15px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #3e2723; /* Brun foncé pour le fond */
-  color: #f5f5f5; /* Brun clair pour le texte */
+  background-color: #11020a;
+  color: #b8b6b6;
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
 }
-
 
 .container {
   width: min(90%, 960px);
   margin-inline: auto;
   padding: 2rem 0;
-  text-align:justify;
 }
 
 .main-header {
-  color: #f5f5f5; /* Brun moyen pour l'en-tête principal */
+  color: #59c8ee;
   font-size: clamp(2rem, 5vw, 5rem);
-  text-align: left;
 }
+
 .sub-header {
   font-size: clamp(1rem, 2vw, 3rem);
 }
@@ -40,28 +42,34 @@ body {
 .error-message {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   margin-bottom: 4rem;
-  color: #f5f5f5; /* Brun moyen pour les messages d'erreur */
+  color: #d0c4ad;
 }
+
+
+
+
 
 .story {
   margin-bottom: 2rem;
   font-weight: 300;
-  break-inside: avoid;
 }
-
-
 .story .story-title {
-  color: #f5f5f5; /* Brun moyen pour les titres d'histoire */
+  color: #d0c4ad;
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
   font-weight: 600;
 }
 
-
-
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
 
 #load-more-btn {
-  background-color: #f5f5f5; /* Brun moyen pour le bouton */
-  color: #3e2723; /* Brun foncé pour le texte du bouton */
+  background-color: #59c8ee;
+  color: #11020a;
   font-weight: 700;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   border: none;
@@ -87,8 +95,16 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-    
   .main-flex {
-        gap: 3rem;
+    display: flex;
+    gap: 3rem;
   }
-}
+  .sidebar-section {
+    flex-basis: 35%;
+    border-right: 1px solid #59c8ee;
+  }
+ 
+  img {
+    width: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@ import { fetchTenStories } from "./news.js";
 //VIEW
 
 //Stories
+const loadMoreBtn = document.querySelector("#load-more-btn");
+
 const newsWrapper = document.querySelector("#news-wrapper");
 const displayedStoriesEL = document.querySelector("#displayed-stories");
 const totalStoriesEl = document.querySelector("#total-stories");
@@ -57,7 +59,28 @@ export function displayError() {
 //Stories
 let currentIndex = 0;
 
+
+//attendre que la fenetre soit entièrement chargée
 window.onload = function () {
   fetchTenStories(currentIndex);
   displayedStoriesEL.innerText = (currentIndex + 1) * 10;
 };
+
+
+// //fetchTenStories(currentIndex++);: À chaque clic sur le bouton "Load More", 
+// cette ligne appelle la fonction fetchTenStories 
+// en passant l'indice actuel et incrémente ensuite currentIndex pour obtenir le prochain ensemble de dix histoires.
+let loadMore = () => {
+  fetchTenStories(currentIndex++);
+
+
+  //nombre de stories total
+  displayedStoriesEL.innerText = (currentIndex + 1) * 10;
+
+  if (currentIndex === 49) {
+    loadMoreBtn.removeEventListener("click", loadMore);
+    loadMoreBtn.style.display = "none";
+  }
+};
+
+loadMoreBtn.addEventListener("click", loadMore);
