@@ -1,4 +1,4 @@
-import { displayTenStories, displayError } from "./view.js";
+import { displayTenStories, displayError } from "/src/view.js";
 
 //MODEL
 
