@@ -1,9 +1,3 @@
-Outils et Ressources  sur l'accessibilité 
-https://app.contrast-finder.org/$
-https://developer.mozilla.org/fr/docs/Learn/Accessibility/CSS_and_JavaScript
-https://developer.mozilla.org/fr/docs/Learn/Accessibility/HTML
-
-L'une des meilleures aides en accessibilité qu'un utilisateur de lecteur d'écran peut avoir est une bonne structure des titres, paragraphes, listes, etc.
 
 
 Ressources API

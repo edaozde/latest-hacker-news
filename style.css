@@ -19,8 +19,8 @@ img {
 body {
   margin: 0;
   padding: 0;
-  background-color: #11020a;
-  color: #b8b6b6;
+  background-color: #0a0a0a;
+  color: #FFAAAA;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .main-header {
-  color: #59c8ee;
+  color: #550000;
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
@@ -54,7 +54,7 @@ body {
   font-weight: 300;
 }
 .story .story-title {
-  color: #d0c4ad;
+  color: #FFAAAA;
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
   font-weight: 600;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 #load-more-btn {
-  background-color: #59c8ee;
+  background-color: #801515;
   color: #11020a;
   font-weight: 700;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
