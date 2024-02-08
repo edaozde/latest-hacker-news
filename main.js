@@ -1,4 +1,4 @@
-import { fetchTenStories } from "./news.js";
+import { fetchTenStories } from "./model.js";
 
 //VIEW
 
