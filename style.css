@@ -28,6 +28,8 @@ body {
   width: min(90%, 960px);
   margin-inline: auto;
   padding: 2rem 0;
+  
+
 }
 
 .main-header {
@@ -37,7 +39,10 @@ body {
 
 .sub-header {
   font-size: clamp(1rem, 2vw, 3rem);
+  border-bottom: 2px solid #562400;
+
 }
+
 
 .error-message {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
@@ -50,6 +55,7 @@ body {
 
 
 .story {
+  
   margin-bottom: 2rem;
   font-weight: 300;
 }
@@ -74,8 +80,8 @@ body {
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   border: none;
   border-radius: 5px;
-  padding: 0.5em 1em;
-  cursor: pointer;
+  padding: 0.5em 2em;
+  cursor:wait;
 }
 
 .footer-flex {
