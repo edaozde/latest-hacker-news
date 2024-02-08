@@ -1,6 +1,10 @@
 
+# Projet de Veille Informatique avec API Hacker News
 
-Ressources API
+Ce projet est une application de veille informatique qui utilise l'API Hacker News pour afficher les dernières nouvelles technologiques. Il est développé en JavaScript en suivant une architecture Modèle-Vue-Contrôleur (MVC) et comprend des tests unitaires pour assurer la qualité du code.
+
+
+# Ressources API
 
 https://hackernews.api-docs.io/v0/overview/introduction
 https://github.com/HackerNews/API
