@@ -81,7 +81,7 @@ body {
   border: none;
   border-radius: 5px;
   padding: 0.5em 2em;
-  cursor:wait;
+  cursor:pointer;
 }
 
 .footer-flex {
