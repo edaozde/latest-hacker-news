@@ -1,4 +1,5 @@
 describe("Hacker News App", () => {
+  //avant chaque test, d'abord loader la page
   beforeEach(() => {
     cy.visit("https://latest-hacker-news.vercel.app/");
   });
