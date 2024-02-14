@@ -1,0 +1,10 @@
+
+# Définit les étapes du pipeline
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - npm install # Installe les dépendances
+    - npm run cy:run # Exécute les tests Cypress
