@@ -1,4 +1,15 @@
-var now = new Date();
-var datetime = now.toLocaleString();
+const now = new Date();
+const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
-document.getElementById("datetime").innerHTML = datetime;
+const dayOfWeek = daysOfWeek[now.getDay()];
+const time = now.toLocaleTimeString('fr-FR', { hour: 'numeric', minute: 'numeric' });
+
+const datetime = document.getElementById("datetime").innerHTML = `${dayOfWeek}, ${time}`;
