@@ -6,7 +6,7 @@ Ce projet est une application de veille informatique qui utilise l'API Hacker Ne
 
 - Affichage des 10 premières histoires dès le chargement de la page.
 - Bouton "Load More" pour charger 10 histoires supplémentaires à chaque clic.
-- Affichage du titre, de l'auteur et du score de chaque histoire.
+- Affichage du titre et de l'auteur de chaque histoire.
 - Lien direct vers l'article complet sur le site Hacker News.
 
 ## Technologies utilisées
